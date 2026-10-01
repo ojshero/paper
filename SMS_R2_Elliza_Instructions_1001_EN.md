@@ -8,7 +8,7 @@ Dear Elliza,
 
 Following my message this morning, this email sets out the work I need for the second-round revision on one specific point: Reviewer 4's comment that our MRD cell is a "black box" and that the model may be fitting the cell rather than the fluid. Together with Reviewer 1's point 6 on centrifugal migration, this is now the critical path for the revision, so please give it priority over the transfer-test idea from my earlier email (that remains useful, but it comes after this).
 
-I have gone through the manuscript and Table 2 in detail. My conclusion is that the reviewer is more right than we would like: Section 2.2 gives none of the protocol details a rheologist needs, the ring is not even mentioned in the current text, and our own Table 2 contains features that a careful reader will question (the 71–79 % drop of τ_y from 10 to 90 °C, the single large step between 50 and 70 °C, and a field dependence that becomes much weaker at high temperature). The right answer is not to argue, but to (1) document the protocol completely, (2) put numbers on every cell effect, (3) run a few control measurements on our own instrument, and (4) tone down the "physics" claims. None of this needs a different cell.
+I have gone through the manuscript, Table 2 and your instrument decks (12 March, 28 April, 5 June, and the 3D-printing deck) in detail. The ring validation, the data-sheet comparison and the mixing observation in those decks are exactly what the response needs, and they will go into the supplement. My conclusion is that the reviewer is more right than we would like: Section 2.2 gives none of the protocol details a rheologist needs, the ring is not even mentioned in the current text, and our own Table 2 contains features that a careful reader will question (the 71–79 % drop of τ_y from 10 to 90 °C, the single large step between 50 and 70 °C, and a field dependence that becomes much weaker at high temperature). The right answer is not to argue, but to (1) document the protocol completely, (2) put numbers on every cell effect, (3) run a few control measurements on our own instrument, and (4) tone down the "physics" claims. None of this needs a different cell.
 
 I will ask the editor today for a two-week extension (to about 27 October). Please plan on the dates below. If the extension is refused I will tell you at once and we will do Part A only.
 
@@ -22,11 +22,13 @@ I will ask the editor today for a two-week extension (to about 27 October). Plea
 
 Please fill in a table with the following, one row each, with the source of each entry (lab notebook, RheoCompass file name, order sheet, manual page):
 
+0. **First, before anything else.** For the 18 flow curves of MRF-132DG in the paper (Table 2, Figures 8–12) and for the MRF-140CG set: were they all measured with the ring in place, and after the mechanical-mixing step was introduced? Give the measurement date for each temperature and field. If any of the published curves were measured without the ring or before the mixing step, tell me the same day, because the response letter rests on this.
 1. Rheometer and cell: MCR302 firmware/software version; MRD 170/1T serial; the **rated sample-temperature range of our MRD 170/1T with the Julabo circulator** (check the manual: Peruzzi et al. report a 70 °C limit for their magnetocell; if ours is similar we must justify 80 and 90 °C).
 2. Upper plate: confirm the exact geometry code from the order sheet or calibration certificate (the manuscript says "PP20/MRD/T1/P2"; I believe it is "PP20/MRD/TI/P2", titanium with a profiled "P2" surface). Give the profile depth or Ra, and the plate edge thickness (height of the cylindrical side face).
 3. Lower plate of the MRD: material (ferromagnetic steel?) and surface finish (smooth or profiled).
-4. Retaining ring: material (magnetic or non-magnetic, this matters), inner diameter, height, radial clearance to the plate, how it is fixed, and how the sample was filled and trimmed relative to the plate edge (photos if you have them).
-5. Sample volume per loading, loading method, whether a **fresh sample was used at each temperature or the same sample throughout**, and the exact sequence of temperatures and fields with dates.
+4. Ring: inner diameter, outer diameter, height, radial clearance to the 20 mm plate, the print material (name of the resin; confirm it is non-magnetic), how it sits on the lower plate, and how the 400 µL sample is filled and trimmed relative to the plate edge. Please send a simple dimensioned sketch and the photos from the 5 June deck. The response draft has placeholders for exactly these numbers, so send them as a list and I will insert them.
+5. Sample handling: the mixing protocol (mixer type, speed, duration) and from which date it was used; loading method; whether a **fresh sample was used at each temperature or the same sample throughout**; and the exact sequence of temperatures and fields with dates.
+5a. Ring validation runs (5 June deck, slides 16–20): one version says 40 °C and the 3D-printing deck says 25 °C. Which is correct? Also state the shear-rate range, dwell time and the number of points used in those runs.
 6. Off-state pre-shear before each field-on sweep (rate, duration) and the equilibration time at each temperature before the field was applied.
 7. Sweep definition: confirm 30 points from 100 to 3000 rpm in 100 rpm steps (linear), ascending only; **dwell time per point** (and whether it was fixed or "steady-state" controlled); total time per sweep. Note: Figures 8–12 show data only to about 2000 s⁻¹ while the text says 3.14×10³ s⁻¹; please confirm what was measured and what was plotted.
 8. Number of repeats per condition, and the run-to-run deviation with the ring (restore the figures and tables from our 29 July reply: Fig. A–D, Table A–C, with n stated).
@@ -57,7 +59,7 @@ g. **Off-state viscosity check**: if we have off-state data at high shear rate a
 
 h. **Closed-form Eq. (21) versus Table 2**: tabulate the difference for all 18 conditions (I get RMSE 644 Pa, +23 % at 70 °C/472 mT, −16 % at 90 °C/472 mT), the temperature at which Eq. (21) gives τ_y = 0 (I get 106 / 112 / 120 °C for 472 / 319 / 166 mT), and the coefficients of Eqs. (17), (19) and (20) to at least four significant figures. Please also confirm that the metrics in Table 3 were computed with the 18 per-condition τ_y values, not with Eq. (21).
 
-i. **Datasheet comparison (internal only for now)**: convert our 166/319/472 mT to H using the LORD B–H curve for MRF-132DG, read the datasheet τ_y at those H values, and compare with our 25 °C values (6073 / 13618 / 18324 Pa). State the B→H assumption explicitly. I will decide whether this goes into the response after seeing the numbers.
+i. **Datasheet comparison**: the 5 June deck already has this for the validation runs (H = 18.18 / 45.88 / 79.65 kA/m; 5.10 / 13.24 / 21.90 kPa against the datasheet 4.64 / 13.77 / 23.47 kPa for MRF-132DG, and 7.51 / 17.04 / 27.63 against 7.46 / 18.27 / 26.40 kPa for MRF-140CG). Please (1) state exactly how τ_y was defined in that comparison (which fit, which shear-rate range), (2) redo the comparison with the Table 2 values at 25 °C (6073 / 13618 / 18324 Pa) using the same B→H conversion, and (3) explain the difference between the two sets (definition, sample batch, date). I will decide which set goes into the response after seeing both.
 
 j. **Viscous heating estimate sheet**: for each of the 18 conditions, torque M at 3000 rpm, power P = M·ω, mean dissipation P/V with V = 0.314 mL, and the estimate ΔT = q h²/(8k) with k = 0.5 and 1.0 W m⁻¹ K⁻¹. I get about 13 W and 8–16 K for 10 °C / 472 mT. Include the dwell time from A1-7.
 
@@ -89,8 +91,9 @@ At 4 A and, if the cell and power supply allow it, 5 A (record the Hall reading;
 **B3. Heating check.**
 At 10 °C and at 25 °C, 472 mT: after the normal pre-shear and equilibration, go directly to 3000 rpm and hold for 60 s, logging torque and plate temperature every second. Deliver the torque drift in % over 60 s and the temperature trace. Watch the normal force; stop if it approaches the instrument limit.
 
-**B4. Ring on/off.**
-At 25 °C, off-state and 166 mT, speeds up to 500 rpm only (no expulsion at these speeds): one sweep with the ring, one without, same filling. Deliver the torque difference in % point by point. This bounds the extra torque from fluid at the plate edge.
+**B4. Ring checks.**
+(a) Ring on/off at 25 °C, off-state and 166 mT, speeds up to 500 rpm only (the unconfined sample is still retained at these speeds): one sweep with the ring, one without, same filling. Deliver the torque difference in % point by point. This bounds the extra torque from fluid at the plate edge.
+(b) Ring retention at the paper's extreme conditions: with the ring, 472 mT, the standard 30-point sweep to 3000 rpm at 25 °C and again at 90 °C, each with a fresh loading. Photograph the cell before and after each sweep, weigh the sample if practical, and note any leakage under or over the ring. This can be combined with the 60 s hold of B3. The validation in the 5 June deck stops at 1000 s⁻¹, and the reviewer will ask about 3000 rpm.
 
 **B5 (only if a smooth PP20/MRD/TI plate is available in the lab).** Smooth versus profiled plate at 25 and 90 °C, 472 mT.
 
@@ -105,6 +108,7 @@ Before the 80 and 90 °C runs, please check the cell's rated temperature range (
 ## Deliverables and reporting
 
 - One Excel workbook for Part A (sheets A2a–A2j), one for Part B, raw RheoCompass exports, and a short PDF with the plots. File names with the date.
+- The ring numbers (item A1-4), the validation conditions (A1-5a) and the mixing protocol (A1-5) go straight into the response letter and the new Section 2.2 text, so please send those three as soon as they are ready, before the rest of Part A.
 - A two-line status email at the end of each working day (what was done, what is blocked). If any item is impossible or needs clarification, ask the same day rather than guessing.
 - Please keep a lab notebook record for every Part B run (sample loading time, pre-shear, equilibration, field-on time), since this is exactly what the reviewer says is missing.
 
