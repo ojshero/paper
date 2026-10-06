@@ -3,7 +3,7 @@
 - **논문**: A free-volume-based Bingham–Papanastasiou model for temperature-dependent flow behavior of magnetorheological fluids (Technical Note)
 - **원고 번호**: SMS-120630.R1 → 이번 수정본 .R2 (마감 2026-10-13, 연장 요청 예정)
 - **대상 코멘트**: R4-2. R1-6(원심 편석)·R4-1/R1-1(실용성)과 교차 참조
-- **작성**: 2026-10-01, 초안 v0.1
+- **작성**: 2026-10-01 초안 v0.1 → 2026-10-06 v0.3 (엘리자 A1 프로토콜 사실표 반영, §0.4 참조)
 - **표기 규칙**: `[A1-n]`, `[A2-n]`, `[B-n]`은 엘리자 작업 결과로 채울 자리(소유자는 §0.3), `[P]`는 교수님 판단, `{IF D}` / `{IF R}`는 진단 결과에 따라 택일하는 블록
 - **연계 문서**: `SMS_R2_Revision_Roadmap_1001.md` (P1-7, P1-4), `SMS_R2_Elliza_Instructions_1001_EN.md` (지시 메일)
 
@@ -26,7 +26,7 @@
    - 데이터시트 τ_y(B) 대조 → 내부 계산 후 25 % 이내일 때만 제시. 472 mT에서 데이터시트보다 낮게 나오면 벽면 한계로 읽힐 수 있음.
    - Lv et al. [29] Doolittle → a, b 비교가 아니라 정규화 η(T)/η(25 °C) 곡선 비교로. "different rheometer" 표현은 Lv의 장비 확인 후에만.
 4. **새로 넣는 것**: §2.2 측정 소절(프로토콜 전면 공개), 발열·에지·편석의 정량 상한, n′(γ̇) 공개, 신선 시료 온도순서 반전·상하향 스윕, 자기장 확장(4–5 A), 링 유/무 토크, τ_y(B,T)·m_p(B)의 "프로토콜 조건부 보정 파라미터" 재정의, 초록·결론 표현 완화, Table 3가 조건별 τ_y 18개 기반임을 명시.
-5. **링 서술(10/1 엘리자 PPT 3건 + 3D 프린팅 덱 반영)**: 도입 경위(3월 CC27 동심원통 검토 → MRD와 병용 불가·갭 고정·19.6 mL → 배제 → 링), 비자성 3D 프린팅 폴리머 링, 시료 400 µL 마이크로피펫, 기계식 혼합, 링 유/무 25–53 % 차이와 이유(비구속 시료가 플레이트 밖으로 퍼져 토크 증가), 링 장착 2회 시험 간 5–13 %, 혼합 시료 + 링에서 데이터시트 τ_y–H 대조 10 % 이내(132DG 5.10/13.24/21.90 vs 4.64/13.77/23.47 kPa at 18/46/80 kA/m; 140CG 7.51/17.04/27.63 vs 7.46/18.27/26.40 kPa at 12/35/51 kA/m). 링 치수·간극·높이·검증 온도는 엘리자가 채움(A1). **링 재질의 내구·재제작 관련 세부는 답변서·원고에 기술하지 않음(10/1 결정).** 06.05 PPT의 τ_y 값은 검증 런 값이며 Table 2의 25 °C 값(6.07/13.62/18.32 kPa)과 다르므로, 데이터시트 대조는 A2-6에서 Table 2 기준으로 재계산한 뒤 어느 값을 어떻게 제시할지 결정.
+5. **링 서술(10/1 엘리자 PPT 3건 + 3D 프린팅 덱 반영, 10/6 사실표로 갱신)**: 도입 경위(3월 CC27 동심원통 검토 → MRD와 병용 불가·갭 고정·19.6 mL → 배제 → 링), 비자성 링(재질은 §0.4 `[P]` 참조; 내경 20·외경 30·높이 0.5 mm), 시료 충전은 스포이드로 갭을 채우는 방식(10/6 사실표 기준; 6월 PPT의 "400 µL 마이크로피펫" 서술은 쓰지 않음), 프로펠러 믹서 500 rpm·15 min 혼합, 링 유/무 25–53 % 차이와 이유(비구속 시료가 플레이트 밖으로 퍼져 토크 증가), 링 장착 2회 시험 간 5–13 %, 혼합 시료 + 링에서 데이터시트 τ_y–H 대조 10 % 이내(132DG 5.10/13.24/21.90 vs 4.64/13.77/23.47 kPa at 18/46/80 kA/m; 140CG 7.51/17.04/27.63 vs 7.46/18.27/26.40 kPa at 12/35/51 kA/m). 링 치수·간극·높이·검증 온도는 엘리자가 채움(A1). **링 재질의 내구·재제작 관련 세부는 답변서·원고에 기술하지 않음(10/1 결정).** 06.05 PPT의 τ_y 값은 검증 런 값이며 Table 2의 25 °C 값(6.07/13.62/18.32 kPa)과 다르므로, 데이터시트 대조는 A2-6에서 Table 2 기준으로 재계산한 뒤 어느 값을 어떻게 제시할지 결정.
 6. **쓰지 말 것**: "shear-rate-independent cell factors are multiplicative and cannot generate the B or T dependence". 비자성 벽면의 전달가능 응력 한계는 전단율과 무관하면서 B·T에 의존하므로 이 문장은 틀림. 리뷰어가 바로 반박 가능.
 7. **분기(decision gate)**: 진단 A2와 대조실험 B1–B2 결과를 보고 결정
    - **경로 D(방어)**: 50→70 °C 계단과 고온에서의 자기장 지수 저하(0.75→0.35)가 신선 시료에서 재현되고, 상하향 이력이 작으며(<10 %), 4–5 A에서 90 °C의 τ_y가 계속 증가함 → "재현 가능한, 프로토콜 조건부 유체 응답"으로 제시. `{IF D}` 블록 사용.
@@ -45,13 +45,35 @@
 
 | 기호 | 내용 | 출처 |
 |---|---|---|
-| `[A1-0]` | 데이터 출처: Table 2·140CG 데이터가 링 장착·혼합 후 측정인지, 측정 일자 | 엘리자 A1 |
-| `[A1-n]` | 프로토콜 사실(플레이트 사양·프로파일 깊이, 하판 재질, 링 내경·외경·높이·간극·고정 방식, 트리밍, 프리시어, 평형시간, 체류시간, 순서, 반복, 센서 위치, B 보정 방식, 셀 정격 온도, m_p 식별 방식) | 엘리자 A1 |
-| `[A1-23]` | 링 검증 런의 온도(06.05 덱 40 °C vs 3D 프린팅 덱 25 °C 중 어느 것이 맞는지) | 엘리자 A1 |
-| `[A1-24]` | 기계식 혼합 프로토콜(믹서 종류·속도·시간)과 도입 시점 | 엘리자 A1 |
+| `[A1-0]` | **확인됨(10/6)**: Table 2 18곡선·140CG 모두 링 장착·혼합 후 측정. 측정 일자는 미제출 | 엘리자 A1 |
+| `[A1-n]` 채워짐 | 플레이트 코드 TI/P2, 링 치수(내경 20·외경 30·높이 0.5 mm), 충전(스포이드), 혼합(프로펠러 500 rpm·15 min), 신선 시료, 프리시어 없음, 평형 5 min, 스윕 0→3000 rpm 31점·체류 1→10 s·170.5 s, 셀 정격 −10~170 °C, m_p 식별(25 °C 고정), 수직력 9.6/28.9 N(한계 50 N), 구동 한계(10 °C/3 A에서 2898 rpm, 140CG 1793 rpm), 갭 영점 보정·공칭 1.0 mm | 엘리자 A1 (10/6) |
+| `[A1-n]` 아직 빈 것 | `[A1-1]` P2 프로파일 깊이·플레이트 측면 두께, `[A1-2]` 하판 재질·표면(Anton Paar 문의), `[A1-8]` 본 측정 반복 횟수·일자, `[A1-18]`/`[A1-19]` 온도센서 위치·후드·포인트별 온도 로그, `[A1-10b]` B가 투자율 보정 포함 값인지·시료 유무, `[A1-5]` 링 0.5 mm 단차 여부, `[A2-7]` 전단율을 실제 속도로 계산했는지·경고 점 제외 여부 | 엘리자 보완 |
+| `[A1-23]` | **확인됨**: 링 검증 런 25 °C·0.01–1000 s⁻¹·2회. 데이터시트 대조 런은 40 °C·0.01–100 s⁻¹·소프트웨어 Bingham 피팅 (Table 2와 다른 정의) | 엘리자 A1 |
+| `[A1-24]` | **확인됨**: 프로펠러 믹서 500 rpm·15 min, 온도마다 신선 시료. 도입 시점은 미제출(단, A1-0에서 모든 데이터가 혼합 후라고 확인) | 엘리자 A1 |
 | `[A2-n]` | 기존 데이터 진단(링 반복성 %, n′ 최소값·실제 보정계수 범위, 오프상태 800–1200 s⁻¹ 기울기 vs 0.102 Pa·s, Lv 대조, 140CG 정규화 감쇠, 데이터시트 대조, 구간별 RMSE, 지수표) | **보류** (10/1: 엘리자에게는 A1만 요청. 수행 시 교수님 또는 별도 지시) |
 | `[B-n]` | 대조실험(온도순서 반전·상하향 이력·25 °C 재측정, 자기장 확장, 60 s 홀드 토크 드리프트·온도, 링 유/무 토크 차, 3000 rpm 시료 유지) | **보류** (10/1: 신규 실험 미계획. 미수행 시 해당 문장은 삭제하거나 추정치·기존 자료로 대체) |
-| `[P]` | 교수님 판단(연장 요청, 경로 D/R, 데이터시트 대조 공개 여부, 유효 온도범위) | 오 교수님 |
+| `[P]` | 교수님 판단(연장 요청, 경로 D/R, 데이터시트 대조 공개 여부, 유효 온도범위, **링 재질**) | 오 교수님 |
+
+### 0.4 10/6 사실표 반영 메모
+
+**채운 것**: 위 표의 "채워짐" 행. §1 (1)·(2)와 §2.1 본문에 수치로 들어감.
+
+**교수님 결정이 필요한 모순 `[P]`**
+- **링 재질**: 사실표는 "논문 데이터는 가공 알루미늄 링, 3D 프린팅 레진 링(JAMG HE)은 사전 검증용"이라고 씀. 10/1 교수님 말씀은 레진. 어느 쪽이 맞는지 확정 필요. 알루미늄이면 영문은 "machined aluminium ring (non-magnetic)", 레진이면 "3D-printed photopolymer ring (non-magnetic)". 초안은 두 경우를 `[P]`로 병기함. 내구·재제작 이력은 어느 경우에도 쓰지 않음(10/1 결정).
+- **시료 충전**: 6월 PPT "400 µL 마이크로피펫" vs 사실표 "스포이드로 갭을 채우고 여분 없이". 초안은 사실표 기준. 답변서와 §2.2.1이 7.29 회신 문구와 어긋나지 않는지 확인.
+- **반복 횟수**: 사실표 본문 "three repeated measurements" vs Table A의 2회. 초안은 Table A 기준(2회)으로 씀. 본 측정(18곡선)의 반복 수는 미제출 → `[A1-8]` 유지.
+
+**정의 차이 주의**: 데이터시트 대조의 τ_y는 40 °C·0.01–100 s⁻¹·소프트웨어 Bingham 피팅값. Table 2의 τ_y는 25 °C·100–3140 s⁻¹ 고전단 절편. 다른 양이므로 "셀+링이 제조사와 일치하는 절대값을 준다"는 근거로만 쓰고, Table 2 검증이라고 쓰지 않음(§1 (3) Third 문장 수정). 40 °C 저전단값 21.9 kPa이 Table 2를 40 °C로 보간한 값(약 15.5 kPa)보다 크다는 점은 리뷰어가 발열·슬립 신호로 읽을 수 있으므로, 그 대조 런의 원곡선을 보고 설명 문장을 준비할 것.
+
+**새로 드러난 사실의 처리**
+- 프리시어 없음 + 평형 5 min: 사실대로 기술하고 "신선 시료·혼합"으로 보완했다고 씀. 90 °C에서 5 min이면 방해침강 추정(5 µm, 첨가제 무시 시 수 분~십수 분)과 같은 자릿수이므로 리뷰어가 물을 수 있음.
+- 체류 1→10 s 선형: 3000 rpm 점에서 10 s → 발열 정상상태(h²/α ≈ 5 s) 도달. 발열 추정에 명시.
+- 10 °C/3 A에서 실제 2898 rpm, 140CG는 1793 rpm + 경고: 구동 한계. 경고 점 제외 여부·실제 속도 기준 전단율 사용 여부 확인(`[A2-7]`). 140CG가 1151 s⁻¹에서 멈춘 이유로 그대로 사용.
+- 0 rpm 포함 31점: 논문 "30 points"와 맞추려면 "31 programmed points, 30 used"로.
+- 수직력 9.6 N / 28.9 N (<50 N): 답변서 (2)에 추가함.
+- m_p는 25 °C에서 식별 후 고정: R1-4·R4-2 양쪽에 같은 문장.
+
+**엘리자 보완 질문(짧게 보낼 것)**: 온도센서 위치·후드·포인트별 온도 로그 / B가 투자율 보정 포함인지·시료 유무 / 하판 재질(Anton Paar 문의) / P2 프로파일 깊이·플레이트 측면 두께 / 본 측정 반복 수·일자 / 링 재질·단차 확정 / 경고 점 처리·실제 속도 기준 전단율 / 데이터시트 대조 런 원곡선 파일.
 
 ---
 
@@ -99,25 +121,37 @@ fluids on non-magnetic walls (Laun et al. 2011; [37]); the lower plate is
 enclosed concentric-cylinder geometry (CC27 in a C-PTD200), which confines the
 sample but cannot be combined with the MRD magnetic field on our instrument,
 so a confining ring around the parallel-plate geometry was adopted. The ring
-is a non-magnetic 3D-printed polymer ring (inner diameter [A1-4] mm, outer
-diameter [A1-5a] mm, height [A1-5] mm, radial clearance to the plate [A1-6]
-mm) placed on the lower plate around the measuring area. The fluid is
-homogenised with a mechanical mixer before each loading [A1-24], and a sample
-of 400 µL is loaded with a volume-controlled micropipette. In validation runs
-at [A1-23] °C (0.01-1000 s^-1, 0-3 A) the flow curves measured without the
-ring were 25-53 % higher than with it, because the unconfined sample spreads
-beyond the plate radius and the field-induced structure outside the plate
-contributes to the torque; two independent loadings with the ring agreed
-within 5-13 % at all four currents (Table S1). With the ring and a homogenised
-sample, the yield stresses identified at 1, 2 and 3 A agree with the
-manufacturer's tau_y-H data within [A2-6] % for MRF-132DG and MRF-140CG when
-the fluid's B-H curve is used to convert the applied flux density to H (Fig.
-S6); see point (3) below. We also state the loading and trimming procedure,
-the off-state pre-shear, the equilibration time at each temperature, the
-measurement sequence, the dwell time per point ([A1-9] s), the point spacing
-(30 points from 100 to 3000 rpm in 100 rpm steps), the number of repeats, the
-location of the temperature sensor, and how the quoted flux densities were
-obtained ([A1-10]: Hall-probe position; empty-gap or in-sample calibration).
+is a non-magnetic [P: machined aluminium / 3D-printed photopolymer] flat ring
+of 20 mm inner diameter (equal to the plate diameter, so there is no radial
+clearance), 30 mm outer diameter and 0.5 mm height [A1-5: 단차 확인], placed
+on the lower plate around the measuring area. The fluid is homogenised with a
+propeller mixer (500 rpm, 15 min) before each loading, a fresh sample is used
+at each temperature, and the sample is dispensed with a dropper until the 1 mm
+gap is filled without excess beyond the plate boundary; no separate off-state
+pre-shear is applied, and the sample is equilibrated for 5 min at each
+temperature before the field is applied. In validation runs at 25 °C
+(0.01-1000 s^-1, 0-3 A) the flow curves measured without the ring were 26-53 %
+higher than with it, because the unconfined sample spreads beyond the plate
+radius and the field-induced structure outside the plate contributes to the
+torque; two independent loadings with the ring agreed within 5-10 % at 1-3 A
+and within 13 % at 0 A (Table S1). With the ring and a homogenised sample, the
+yield stresses obtained at 1, 2 and 3 A by a Bingham fit over 0.01-100 s^-1 at
+40 °C agree with the manufacturer's tau_y-H data within 10 % for MRF-132DG
+(5.10, 13.24 and 21.90 kPa against 4.64, 13.77 and 23.47 kPa at 18, 46 and 80
+kA/m) and within 7 % for MRF-140CG (7.51, 17.04 and 27.63 kPa against 7.46,
+18.27 and 26.40 kPa at 12, 35 and 51 kA/m), the field strength H being
+obtained from the applied flux density through the manufacturer's B-H curve of
+each fluid (Fig. S6); we note under point (3) that this is a low-shear yield
+stress and not the high-shear intercept of Table 2. Each flow curve consisted
+of an ascending linear sweep from 0 to 3000 rpm in steps of 100 rpm (31
+programmed points, of which those at and above 100 s^-1 are used for
+identification), with the measuring time per point increasing linearly from
+1 s to 10 s (170.5 s per sweep); each condition was repeated [A1-8] times.
+Temperature is measured [A1-18] and controlled by the circulator; the cell is
+rated for -10 to 170 °C and the experiments were limited to 10-90 °C. The
+quoted flux densities are the values displayed by the rheometer software from
+its current-field calibration for the MRD 170/1T [A1-10b: with / without the
+sample-permeability correction]; a Hall probe (FH-54) is fitted to the cell.
 The ring validation data, which were shown in our first-round reply and had
 been removed from the manuscript, are restored as Table S1 and Fig. S5.
 
@@ -127,25 +161,24 @@ we estimated them and, where possible, measured them.
 - Viscous heating. At the most severe condition (10 °C, 472 mT, 3000 rpm) the
   dissipation is approximately 13 W in the 0.31 mL sample. A one-dimensional
   conduction estimate gives a mid-gap temperature rise at the rim of [8-16] K
-  for k = [1-0.5] W m^-1 K^-1 with both plates at the set temperature, reached
-  within a few seconds. A 60 s hold at 3000 rpm showed a torque drift of [B3-1]
-  % and the ascending and descending sweeps differed by [B1-1] % (Fig. S2).
+  for k = [1-0.5] W m^-1 K^-1 with both plates at the set temperature, which
+  is reached within the 10 s measuring time of the last points (thermal
+  diffusion time across the gap about 5 s). [B3-1/B1-1: 60 s 홀드 토크 드리프트
+  와 상하향 스윕 차이 — 보류; 미수행 시 이 문장 삭제] (Fig. S2).
   Because the dissipation scales with tau_y(B,T), this effect reduces the
   apparent temperature dependence at low temperature and high field; it cannot
   produce the decrease of tau_y with temperature reported in Table 2.
 
-- Open surface and edge. The ring converts the free rim into a confined edge,
-  and its effect is documented rather than assumed: the 25-53 % difference
-  between unconfined and confined measurements (Table S1) is the quantitative
-  form of the instability the Reviewer refers to. The torque of fluid wetting
-  the cylindrical edge of the plate inside the ring is bounded by 3t/R
-  relative to the face torque (about 30 % per millimetre of wetted height); a
-  comparison with and without the ring at <= 500 rpm, where the unconfined
-  sample is still retained, gave a difference of [B4-1] % (Fig. S5).
-  Retention of the sample by the ring at the highest speed and temperature
-  (3000 rpm; 25 and 90 °C, 472 mT) was verified by [B4-2: inspection and
-  sample mass before and after the sweep / torque stability during a 60 s
-  hold] (Fig. S5).
+- Open surface and edge. The ring is a low barrier at the rim (0.5 mm high for
+  a 1 mm gap, inner diameter equal to the plate diameter), so the cylindrical
+  face of the plate is not in contact with confined fluid and no edge-torque
+  term of the plate-in-cup type arises; the upper part of the rim remains a
+  free surface. Its effect is documented rather than assumed: the 26-53 %
+  difference between unconfined and confined measurements (Table S1) is the
+  quantitative form of the instability the Reviewer refers to, and the sample
+  condition after the 3000 rpm sweeps with and without the ring is shown in
+  Fig. S5 (Fig. A of our first-round reply). [B4-1/B4-2: 링 유/무 ≤500 rpm
+  토크 비교, 3000 rpm·90 °C 유지 확인 — 보류]
 
 - Wall slip. The profiled upper plate and the magnetic lower plate are the
   standard countermeasures. The non-Newtonian index n' = d ln M / d ln
@@ -168,14 +201,24 @@ we estimated them and, where possible, measured them.
   1 kPa) is below tau_y at every condition, so centrifugal migration is not
   expected in the on-state data used for identification; the off-state
   viscosity data were taken at 100 s^-1, where the rim acceleration is 0.1 g.
-  Settling during the off-state equilibration was controlled by [A1-11:
-  pre-shear at 100 s^-1 for [ ] s immediately before the field was applied /
-  a fresh sample at each temperature]. These points are expanded in our reply
-  to Reviewer 1, Comment 6.
+  Settling during the off-state equilibration was limited by using a freshly
+  homogenised sample at each temperature and a 5 min equilibration before the
+  field was applied; no off-state pre-shear was used, and we state this as a
+  limitation. These points are expanded in our reply to Reviewer 1, Comment 6.
+
+- Normal force and drive limits. The normal force at 10 °C, 472 mT and 3000
+  rpm was 9.6 N for MRF-132DG and 28.9 N for MRF-140CG (instrument limit
+  50 N). At this condition the drive held 2898 rpm at the last point for
+  MRF-132DG, whereas for MRF-140CG it could not maintain the programmed speed
+  above about 1800 rpm and the software flagged the points; this is why the
+  MRF-140CG analysis was limited to 10^2 to 1.15 x 10^3 s^-1 [A2-7: 경고 점
+  제외 여부·실제 속도 기준 전단율 확인]. The MRF-140CG tests were limited to
+  70 °C by the time available for the first revision.
 
 - Field. The quoted flux densities (166, 319 and 472 mT at 1, 2 and 3 A) are
-  [A1-10: Hall-probe readings in the empty gap at the measuring temperature /
-  in-sample values from the instrument's calibration]. In single-gap cells the
+  the values given by the rheometer software from its current-field
+  calibration [A1-10b: with / without the sample-permeability correction],
+  which is why Figure 2 is linear in current. In single-gap cells the
   in-sample flux density depends on the sample permeability and varies
   radially (Laun et al. 2008), so we treat B as a calibrated label of the field
   condition rather than as the local flux density in the fluid, and we now
@@ -209,14 +252,17 @@ the same protocol, [A2-5: coincides with / differs from] that of MRF-132DG
 independence, since both fluids were measured in the same cell; it shows only
 that the constitutive form applies to both.
 
-Third, the identified 25 °C yield stresses were compared with the
-manufacturer's tau_y-H data, using the fluid's B-H curve to convert the
-applied flux densities of 166, 319 and 472 mT to H = 18, 46 and 80 kA/m for
-MRF-132DG (12, 35 and 51 kA/m for MRF-140CG): [A2-6: agreement within [ ] %
-at all three fields for both fluids / agreement within [ ] % at 166 and 319
-mT and a deficit of [ ] % at 472 mT, which we discuss as a possible wall
-effect] (Fig. S6). [P: 06.05 검증 런 값은 10 % 이내로 일치하나 Table 2 값과
-다름. A2-6 결과에 따라 문장 택일.]
+Third, the absolute level of the field-induced stress measured in this cell
+was checked against the manufacturer's independent tau_y-H data: with the
+ring and a homogenised sample, Bingham yield stresses fitted over 0.01-100
+s^-1 at 40 °C agree with the data sheet within 10 % for MRF-132DG and within
+7 % for MRF-140CG at the three field levels, with H obtained from B through
+each fluid's B-H curve (Fig. S6). We stress that this is a low-shear yield
+stress and a different quantity from the high-shear intercept of Table 2
+(25 °C, 10^2 to 3.1 x 10^3 s^-1), so it validates the cell and the ring as a
+measuring system, not the individual values of Table 2 [A2-6: Table 2 값 기준
+재계산은 보류; P: 40 °C 저전단값 21.9 kPa > Table 2 보간값 ~15.5 kPa에 대한
+설명 문장 필요 여부].
 Reported temperature sensitivities of the on-state yield stress of carbonyl-
 iron MRFs vary widely in the literature, from nearly temperature-independent in
 sealed or device-type fixtures [22,50] to decreases comparable with ours in
@@ -270,48 +316,53 @@ descending and reversed-sequence sweeps on fresh samples; field extension at
 2.2.1 Measurement considerations and limitations
 
 All flow curves were obtained in a single-gap parallel-plate magnetocell (MRD
-170/1T) with a profiled titanium upper plate (PP20/MRD/TI/P2, profile depth
-[A1-1] µm) and a [A1-2] lower plate that forms the magnetic pole. The profiled,
-non-magnetic upper plate is the configuration recommended to suppress wall slip
-of MR fluids on non-magnetic walls [Laun 2011; 37]. Because an
-unconfined sample spreads beyond the plate radius under field and at high
-speed, a non-magnetic 3D-printed polymer ring (inner diameter [A1-4] mm,
-outer diameter [A1-5a] mm, height [A1-5] mm, radial clearance to the plate
-[A1-6] mm) was placed on the lower plate around the measuring area; an
+170/1T, rated for -10 to 170 °C; the experiments were limited to 10-90 °C)
+with a profiled titanium upper plate (PP20/MRD/TI/P2, profile depth [A1-1]
+µm) and a [A1-2] lower plate that forms the magnetic pole. The profiled,
+non-magnetic upper plate is the configuration recommended to suppress wall
+slip of MR fluids on non-magnetic walls [Laun 2011; 37]. Because an unconfined
+sample spreads beyond the plate radius under field and at high speed, a
+non-magnetic [P: machined aluminium / 3D-printed photopolymer] ring (inner
+diameter 20 mm, equal to the plate diameter; outer diameter 30 mm; height
+0.5 mm [A1-5]) was placed on the lower plate around the measuring area; an
 enclosed concentric-cylinder geometry was considered but cannot be combined
-with the magnetic field on this instrument. In validation runs at [A1-23] °C
-(0.01-1000 s^-1, 0-3 A), flow curves measured without the ring were 25-53 %
+with the magnetic field on this instrument. In validation runs at 25 °C
+(0.01-1000 s^-1, 0-3 A), flow curves measured without the ring were 26-53 %
 higher than with it, and two independent loadings with the ring agreed within
-5-13 % (Table S1). The fluid was homogenised with a mechanical mixer before
-each loading [A1-24]; a sample of 400 µL was loaded with a volume-controlled
-micropipette, trimmed [A1-14], pre-sheared at 100 s^-1 for [A1-15] s in the
-off-state and equilibrated for [A1-16] min at each temperature before the
-field was applied; [A1-17: a fresh sample was used at each
-temperature / the same sample was used in the order ...]. Each flow curve
-consisted of 30 points from 100 to 3000 rpm in steps of 100 rpm (about 105
-s^-1 in nominal rim shear rate), in ascending order, with [A1-9] s per point,
-and was repeated [A1-8] times. Temperature was measured [A1-18] and controlled
-by the circulator; the upper plate is not actively thermostatted [A1-19: hood
-used / not used]. The quoted flux densities (166, 319 and 472 mT at 1, 2 and 3
-A) are [A1-10]. In single-gap cells the flux density in the sample depends on
-the sample permeability and varies radially [Laun 2008]; B is therefore used
-here as a calibrated label of the field condition rather than as the local flux
-density in the fluid.
+5-10 % at 1-3 A and 13 % at 0 A (Table S1). The fluid was homogenised with a
+propeller mixer (500 rpm, 15 min) before each loading; a fresh sample was used
+at each temperature, dispensed with a dropper until the 1 mm gap was filled
+without excess beyond the plate boundary, and equilibrated for 5 min at the
+set temperature before the field was applied (no off-state pre-shear was
+used). Each flow curve was an ascending linear sweep from 0 to 3000 rpm in
+steps of 100 rpm (31 programmed points, about 105 s^-1 in nominal rim shear
+rate), with the measuring time per point increasing linearly from 1 to 10 s
+(170.5 s per sweep); the data at and above 100 s^-1 were used for
+identification, and each condition was repeated [A1-8] times. Temperature was
+measured [A1-18] and controlled by the circulator; the upper plate is not
+actively thermostatted [A1-19: hood used / not used]. The quoted flux
+densities (166, 319 and 472 mT at 1, 2 and 3 A) are the values given by the
+rheometer software from its current-field calibration [A1-10b]; the field
+strengths quoted for comparison with the manufacturer's data were obtained
+from B through each fluid's B-H curve. In single-gap cells the flux density in
+the sample depends on the sample permeability and varies radially [Laun 2008];
+B is therefore used here as a calibrated label of the field condition rather
+than as the local flux density in the fluid.
 
 Several cell-related effects were bounded rather than assumed absent. (i)
 Viscous dissipation at the highest speed and field (10 °C, 472 mT, 3000 rpm)
 is approximately 13 W in the 0.31 mL sample; a one-dimensional conduction
 estimate gives a mid-gap temperature rise at the rim of [8-16] K for k =
-[1-0.5] W m^-1 K^-1 with both plates at the set temperature, consistent with
-the torque drift of [B3-1] % measured during a 60 s hold at 3000 rpm and the
-ascending/descending difference of [B1-1] % (Fig. S2). Because the dissipation
-scales with tau_y(B,T), this effect reduces the apparent temperature
-dependence at low temperature and high field and cannot generate the decrease
-of tau_y with temperature reported in Section 3.1. (ii) The torque of fluid
-wetting the plate edge inside the ring is bounded by 3t/R per unit wetted
-height t relative to the face torque; a comparison with and without the ring
-at <= 500 rpm gave a difference of [B4-1] %, and retention of the sample at
-3000 rpm was verified at 25 and 90 °C (Fig. S5). (iii) Under field,
+[1-0.5] W m^-1 K^-1 with both plates at the set temperature, which is reached
+within the 10 s measuring time of the last points [B3-1/B1-1: 홀드·상하향 결과
+— 보류; 미수행 시 생략]. Because the dissipation scales with tau_y(B,T), this
+effect reduces the apparent temperature dependence at low temperature and
+high field and cannot generate the decrease of tau_y with temperature
+reported in Section 3.1. (ii) The ring is 0.5 mm high for the 1 mm gap and its
+inner diameter equals the plate diameter, so the cylindrical face of the plate
+is not in contact with confined fluid and no plate-in-cup edge torque arises;
+the sample condition after the 3000 rpm sweeps with and without the ring is
+shown in Fig. S5 [B4: 링 유/무 토크·3000 rpm 유지 시험 — 보류]. (iii) Under field,
 the magnetic interparticle force exceeds the centrifugal force on a particle
 by three to four orders of magnitude and the wall-supported particle-phase
 body force at 101 g (about 1 kPa) is below tau_y at every condition, so
@@ -319,9 +370,15 @@ centrifugal migration is not expected in the on-state data used for
 identification; the off-state viscosity data were taken at 100 s^-1 (0.1 g at
 the rim). (iv) The non-Newtonian index n' = d ln M / d ln gamma-dot_R was
 [A2-2] in all flow curves, with (3+n')/4 between [0.75] and [0.80] (Fig. S1).
-(v) Thermal expansion of the measuring stack changes the gap by about [A1-20]
-% over 10-90 °C [A1-21: compensated / not compensated], which affects the
-shear-rate axis but not the yield-stress plateau.
+(v) A zero-gap calibration was performed before the measurements and the
+nominal gap of 1.0 mm was maintained throughout; thermal expansion of the
+measuring stack over 10-90 °C (estimated [A1-20] %) [A1-21: was / was not]
+compensated, which affects the shear-rate axis but not the yield-stress
+plateau. (vi) The normal force at 10 °C, 472 mT and 3000 rpm was 9.6 N for
+MRF-132DG and 28.9 N for MRF-140CG (instrument limit 50 N); at this condition
+the drive held 2898 rpm at the last point for MRF-132DG but could not exceed
+about 1800 rpm for MRF-140CG, which is why the MRF-140CG analysis was limited
+to 10^2 to 1.15 x 10^3 s^-1.
 
 Within these bounds the identified parameters remain conditioned on the cell
 and the protocol: the absolute level of tau_y may differ in cells with other
@@ -380,17 +437,20 @@ re-identified for other fluids, cells or device geometries.
 
 ## 3. 교차 참조 (다른 답변과의 정합)
 
-- **R1-6 (원심 편석)**: §2.2.1 (iii)와 Table S1·Fig. S2·Fig. S5(3000 rpm 시료 유지)를 인용. 로드맵 P1-4의 Stokes 드리프트 "<1 % of R" 주장은 체류시간 [A1-9]를 명시한 뒤에만 사용(오프상태 캐리어 점도 기준 10 s 체류 시 1–9 % of R까지 가능). 쌍극자력 비(10³–10⁴)와 벽면 지지 체적력(≈1 kPa vs τ_y) 논거를 중심으로. 원고에 "no torque drop"이라 쓰려면 n′ 최소값 확인이 선행돼야 함.
+- **R1-6 (원심 편석)**: §2.2.1 (iii)와 Table S1·Fig. S2·Fig. S5(3000 rpm 시료 유지)를 인용. 체류시간이 1→10 s로 확인됐으므로(3000 rpm 점에서 10 s), 오프상태 캐리어 점도 기준 Stokes 드리프트는 10 s에 0.2–0.9 mm(2–9 % of R)까지 가능 → 로드맵 P1-4의 "<1 % of R" 주장은 쓰지 않음. 쌍극자력 비(10³–10⁴)와 벽면 지지 체적력(≈1 kPa vs τ_y) 논거를 중심으로. 원고에 "no torque drop"이라 쓰려면 n′ 최소값 확인이 선행돼야 함.
 - **R4-1 / R1-1 (실용성)**: 장치 예시는 R1-1에서 한 번만. 식(21) 대신 Table 2 값으로 계산(식(21)은 70–90 °C/472 mT에서 16–23 % 오차).
 - **R1-2 / R1-8**: Table 3가 조건별 τ_y 기반이라는 명시, 식(21) 잔차, τ_y=0 온도, 3점 보간의 자유도 0 인정은 여기와 같은 문장을 공유.
-- **R1-4 (m_p 온도의존)**: m_p(B) 식별 방식·온도 [A1-22]가 밝혀져야 ablation 서술 가능. 한 온도에서 식별해 고정했다면 전이 형상의 온도의존이 τ_y(T)에 강제로 흡수된다는 점을 R1-4·R4-2 양쪽에서 일관되게 인정.
+- **R1-4 (m_p 온도의존)**: 확인됨(10/6) — m_p(B)는 여러 온도에서 피팅하면 추세 없이 변동이 커서 25 °C 데이터로 식별해 고정(7.425/8.196/10.911 ms)하고, τ_y(B,T)는 그 뒤 조건별로 식별. 한 온도에서 식별해 고정했으므로 전이 형상의 온도의존이 τ_y(T)에 흡수된다는 점을 R1-4·R4-2 양쪽에서 같은 문장으로 인정. 엘리자의 10/6 R1 답변 초안에 이미 이 서술이 들어가 있음.
+- **R1-6 답변 초안(10/6)**: 숫자 없이 "원심가속도만으로 편향을 단정할 수 없다"는 논조라 약함. 본 초안 (2)의 쌍극자력/원심력 비, 벽면 지지 체적력, 수직력, 링 검증 수치, Fig. A를 넣어 보강할 것.
 
 ---
 
 ## 4. 제출 전 체크리스트
 
-- [ ] A1-0 데이터 출처(링 장착·혼합 후 측정 여부, 일자) 확인 → 답변서 전제 확정
-- [ ] A1 프로토콜 사실표 수령 → §2.2.1·Table S0 채움 (링 내경·외경·높이·간극, 검증 온도, 혼합 프로토콜 포함)
+- [x] A1-0 데이터 출처(링 장착·혼합 후 측정 여부) 확인 → 답변서 전제 확정 (10/6; 일자는 미제출)
+- [x] A1 프로토콜 사실표 1차 수령 → §1·§2.2.1 반영 (10/6)
+- [ ] A1 보완 질문 발송·회신 (§0.4 목록: 온도센서·로그, B 보정 방식, 하판 재질, 프로파일 깊이, 반복 수·일자, 링 재질·단차, 경고 점·실제 속도, 대조 런 원곡선)
+- [ ] 링 재질 확정 `[P]` → §1·§2.2.1의 [P: aluminium / photopolymer] 택일
 - [ ] A2-2 n′ 최소값 확인 → "0.7–0.8" 문구 수정 여부 결정
 - [ ] A2 지수표·구간별 RMSE·고전단 기울기 결과로 경로 D/R 결정 `[P]`
 - [ ] B1 결과(계단 재현성·이력·25 °C 재측정) → `{IF D}`/`{IF R}` 택일
